@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ContextMenuPolicy::PreventContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>New Game Start!</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>251</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Car2</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_left">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>260</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Left</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_go">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>220</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Go</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_right">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>260</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Right</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_back">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>300</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Back</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_stop">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>260</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Stop</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_20">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>HP:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_18">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>160</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>HP:</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_hp_left_down">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>90</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Down</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_hp_right_up">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>60</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Up</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_hp_back_up">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>140</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Up</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="car2_hp_left">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>80</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>80</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>HP:</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_hp_right_down">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>90</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Down</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="car2_hp_back">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>160</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>30</y>
+           <width>51</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>image/car2.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_hp_left_up">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>60</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Up</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car2_hp_back_down">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>170</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Down</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="car2_hp_right">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>80</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>121</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Car1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_go">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>220</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Go</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_stop">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>260</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Stop</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_back">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>300</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Back</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_left">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>260</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Left</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_right">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>260</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Right</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>30</y>
+           <width>51</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>image/car1.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>HP:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="car1_hp_left">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>80</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_hp_left_up">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>60</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Up</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_hp_left_down">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>90</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Down</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="car1_hp_right">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>80</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_hp_right_up">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>60</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Up</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_hp_right_down">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>90</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Down</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>80</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>HP:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="car1_hp_back">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>160</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_hp_back_up">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>140</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Up</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_car1_hp_back_down">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>170</y>
+           <width>50</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Down</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_14">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>160</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>HP:</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="image_source.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_car1_go</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1Go()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_left</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1Left()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_stop</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1Stop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_right</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1Right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_back</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1Back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_hp_left_up</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1HpLeftUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_hp_left_down</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1HpLeftDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_hp_back_up</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1HpBackUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_hp_back_down</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1HpBackDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_hp_right_down</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1HpRightDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>354</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car1_hp_right_up</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar1HpRightUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>354</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_go</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2Go()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_left</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2Left()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_stop</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2Stop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_hp_right_down</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2HpRightDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>747</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_hp_right_up</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2HpRightUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>747</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_right</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2Right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>690</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_back</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2Back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_hp_left_up</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2HpLeftUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>487</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_hp_left_down</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2HpLeftDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>487</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_hp_back_up</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2HpBackUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>637</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_car2_hp_back_down</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnCar2HpBackDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>637</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnGameStart()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>400</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btnCar1Go()</slot>
+  <slot>btnCar1Left()</slot>
+  <slot>btnCar1Stop()</slot>
+  <slot>btnCar1Right()</slot>
+  <slot>btnCar1Back()</slot>
+  <slot>btnCar1HpLeftUp()</slot>
+  <slot>btnCar1HpLeftDown()</slot>
+  <slot>btnCar1HpBackUp()</slot>
+  <slot>btnCar1HpBackDown()</slot>
+  <slot>btnCar1HpRightUp()</slot>
+  <slot>btnCar1HpRightDown()</slot>
+  <slot>btnCar2Go()</slot>
+  <slot>btnCar2Left()</slot>
+  <slot>btnCar2Stop()</slot>
+  <slot>btnCar2Right()</slot>
+  <slot>btnCar2Back()</slot>
+  <slot>btnCar2HpLeftUp()</slot>
+  <slot>btnCar2HpLeftDown()</slot>
+  <slot>btnCar2HpBackUp()</slot>
+  <slot>btnCar2HpBackDown()</slot>
+  <slot>btnCar2HpRightUp()</slot>
+  <slot>btnCar2HpRightDown()</slot>
+  <slot>btnGameStart()</slot>
+ </slots>
+</ui>
