@@ -1,0 +1,41 @@
+[TASK 생성 방법]
+1. OS Task 생성
+ - Short Name, Priority, Resource Ref 등록
+2. OS Alarm 생성 -> 주기함수
+ - OsAlarmActionTask를 위에서 생성한 Task로 등록
+3. Application 설정
+ - App Alarm Ref, App Task Ref 등록 
+ 4. TaskMapping
+ - TaskMapping 후 Sw Component Instance Mapping 체크
+
+============================================ 2024 / 11 / 19
+[R440] TechnicalReview OS탭 1번
+각 ASW Task 실행시간의 권장 기준시간 이행 여부
+OSTask_ASW_FG1_10ms의 실행 시간이 기준에 미치지 못함
+
+OSTask_ASW_FG1_10ms
+- TimingEvent_DiagnostgicMonitor
+- TE_RE_WdgMTest
+- Os_TE_10ms_Master
+- TE_AppFunction_10ms
+- TE_AppInterface_10ms
+- TE_AppMonitor_10ms
+- TE_Uds_Runnable
+- TE_App_InOut_TE
+- TE_NvM_Runnable
+
+Try
+실행 시간 측정을 위해 Test Task를 생성하고 각각의 실행시간을 측정
+
+[RESULT]
+AppInOut 600us
+여러개의 TASK로 분할 해야할것 같음.
+
+
+
+============================================ 2024 /11 / 22
+OTA 관련 이슈
+Unit1 - Glass 업데이트 하는 유닛
+Unit2 - Blind 업데이트 하는 유닛
+
+
