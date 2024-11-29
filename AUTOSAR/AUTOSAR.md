@@ -1,13 +1,8 @@
 - **공부 링크**
-    
     [https://xenostudy.tistory.com/679#google_vignette](https://xenostudy.tistory.com/679#google_vignette)
-    
     [https://autosw.tistory.com/13](https://autosw.tistory.com/13)
-    
     [https://autosw.tistory.com/notice/11](https://autosw.tistory.com/notice/11)
-    
     [AUTOSAR 4.1.1의 최신 기술과 이해 (autoelectronics.co.kr)](https://www.autoelectronics.co.kr/article/articleView.asp?idx=1270#:~:text=%E2%91%A4%20PORT%EB%8A%94%20MCU%EC%9D%98%20%EA%B8%B0%EB%B3%B8%EC%84%A4%EC%A0%95%20%EC%9D%B4%ED%9B%84%EC%97%90%20Board%EC%83%81%EC%9D%98%20Pin%EC%9D%84%20%EC%96%B4%EB%96%A4,%EB%B3%80%EA%B2%BD%EC%9D%84%20%EC%9C%84%ED%95%9C%20API%EB%A5%BC%20%EC%83%9D%EC%84%B1%ED%95%A0%20%EA%B2%83%EC%9D%B8%EC%A7%80%EB%A5%BC%20%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94%20Device%20Driver%EC%9D%B4%EB%8B%A4.)
-    
 
 > [!important]  
 > 차량용 ECU의 특성하드웨어(센어 및 엑추에이터)와 상호 작용 및 통신CAN, LIN, FlexRay or Ethernet 같은 차량 네트워크 통신전력 및 메모리가 제한된 자원을 가진 MCU, RTOS를 사용내부 또는 외부 플래시 메모리에서 프로그램 실행  
@@ -21,19 +16,14 @@
     
     1. **Configure System  
         시스템 설정 단계로 컴포넌트의 구성/연결 등을 정의한다 (SCD을 개발)  
-        **
     2. **Implement Componet  
         ”Configure System” 단계에서 구성한 컴포넌트들에 대한 코드 구현 등을 진행  
-        **
     3. **Extract ECU-Specific Information  
         시스템 구성 정보로 부터 특정 제어기 SW를 구현하기 위한 정보만을 추출  
-        **
     4. **Configure ECU  
         제어기 관련 설정을 진행 ( ECU Configuration Description 개발 )  
-        **
     5. **Generate Executable  
         제어기에서 동작하는 실행 파일을 생성한다. ( 컴파일 및 링크를 통해 실행 이미지 생성)  
-        **
     
     ![[image.png]]
     
