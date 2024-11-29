@@ -61,5 +61,3 @@ BswM Interaction
 - 이전 Rule의 결과를 반영할지 설정
 ![[Pasted image 20241129134206.png]]
 
-
-Action
