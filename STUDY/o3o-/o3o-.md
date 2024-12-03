@@ -57,7 +57,7 @@
 
 [[DCM]]
 
-[[Mode Management]]
+[[STUDY/o3o-/Mode Management/Mode Management]]
 
 [[CAN DB Import]]
 

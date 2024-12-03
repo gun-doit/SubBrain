@@ -1,4 +1,4 @@
-[[BLOG]]
+[[STUDY/BLOG/BLOG]]
 
 [[Meeting & Issue]]
 
