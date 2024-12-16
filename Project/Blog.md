@@ -37,3 +37,60 @@
 
 ## DB
 : 몽고DB, postgrl db
+스키마
+```
+const HealthSchema = new mongoose.Schema({
+    userId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
+    },
+    pushup_total: {
+        type: Number,
+        default: 0
+    },
+    pullup_total: {
+        type: Number,
+        default: 0
+    },
+    pushup_data: [{
+        date: {
+            type: Date || Date.now,
+        },
+        sets: [{
+            setNumber: Number,
+            count: Number
+        }],
+        totalCount: Number
+    }],
+    pullup_data: [{
+        date: {
+            type: Date || Date.now,
+        },
+        sets: [{
+            setNumber: Number,
+            count: Number
+        }],
+        totalCount: Number
+    }]
+}, {
+    timestamps: true
+});
+```
+[{
+userId;
+pushup_total: number
+pullup_total : number
+pushup_data:
+	{
+	data:
+	sets: []
+	totalCount	
+	}
+pullup_data:
+	{
+	data:
+	sets: []
+	totalCount	
+	}
+}]
