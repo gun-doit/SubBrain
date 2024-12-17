@@ -42,9 +42,12 @@
 
 ---
 ### CAN Frame
-
-
-
+![[Pasted image 20241217174213.png]]
+1. Data Frame : Data를 한 node에서 다른 node로 전송하기 위한 Frame
+2. Remote Frame : 특정한 Data Frame의 전송을 다른 Node에 요청
+   -> ID 값이 들어가는 Filed가 있어 표준형과 확장형으로 나뉨
+3. Error Frame : 어떤 node에서 Error가 발견됐을 경우 주변 node들에게 Error가 났다는 사실을 알리기 위한 Frame
+4. Overlaod Frame : 어떤 node가 remote frame을 받았는데,그 node가 이미 하던 일이 있어 바로 보낼 수 없게 되는 경우, 자신이 과부하 상태임을 알리는 Frame
 
 ### FullCAN vs BasicCAN
 **FullCAN** : 수신되는 메시지를 종류별로 메시지 버퍼에 채운다. 만약 같은 종류의 메시지가 연속해서 수신 되면, 비록 다른 메시지 버퍼가 비어 있다고 하더라도 해당 메시지의 전용 버퍼에만 메시지를 채운다.
