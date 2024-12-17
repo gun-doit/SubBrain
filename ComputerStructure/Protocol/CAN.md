@@ -50,7 +50,44 @@
 4. Overlaod Frame : 어떤 node가 remote frame을 받았는데,그 node가 이미 하던 일이 있어 바로 보낼 수 없게 되는 경우, 자신이 과부하 상태임을 알리는 Frame
 
 ![[Pasted image 20241217174537.png]]
+### Data Frame
+![[Pasted image 20241217174843.png]]
 
+- **IFS (Inter Frame Space) :** Frame 간 3bit 정도의 간격 유지용. Idle Time 유지 역할
+- **SOF (Start Of Frame) :** 모든 Frame이 기본적으로 보유하는1bit Data. Frame의 시작을 알림
+- **ID (Identifier) :** Bus에 접근할 Node 설정 (통신할 장치 선택). 표준형은 11bit, 확장형은 29 bit
+- **RTR (Remote Transmission Request) :** 이 Frame이 Data / Remote Frame인가를 알림  
+    - 0 (Dominant) : Data Frame
+    - 1 (Recessive) : Remote Frame
+- **IDE (IDentifier Extension)** : 이 Data Frame이 표준형 / 확장형 Data Frame인가를 구별하는 기준
+    - 0 : Standard Frame 
+    - 1 : Extended Frame
+    - 확장형의 경우 IDE 뒤에 확장되는 ID가 따라옴(18bit)  
+          
+        
+    - **SRR (Substitute Remote Request)** : 현재 Data Frame이 확장형인 경우, RTR은 확장된 ID 뒤로 이동하고  
+        원래 RTR의 자리를 대체하는 1bit
+    - ID 값이 끝난 후에 RTR bit를 표시할 수 있도록 RTR을 임시적으로 대체해주는 역할
+- **DLC (Data Length Code)** : 0~8 byte의 크기를 나타냄 
+- **Data :** 
+- **CRC (CycleRedundancy Check) :** Serial 통신시 Noise가 많이 발생하므로, 통신 Data의 검증을 위해 사용
+    - 송신 Node에서 **Bit pattern**을 보내며 그에 대한 **CRC** 값을 계산하고 뒤에 붙여서 보냄
+    - 수신 Node에서는 받은 Bit pattern으로 **CRC를 직접 계산**하고, 송신단에서 **보낸 CRC값과 비교**하여 같은지 확인
+    - 둘이 다르면 수신한 **Bit pattern** 중에 **Error가 발생**한 것
+- **ACK(Acknowledge) :** Receiver로부터의 Acknowledge
+    - 송신 Node에서 이 bit를 1로 보냄
+    - 수신 Node에서 Message를 받고 Error 없이 잘 받았음을 표시하기 위해 ACK Bit에 1을 Overwrite  
+        0이 Dominant Bit이므로 0이 쓰임
+    - 즉 **수신단에서 Message를 정상적으로 받았다면 ACK 값이 0으로 변함**
+- **EOF (End Of Frame) :**
+##### Detail of Data Frame
+![[Pasted image 20241217174858.png]]
+- CAN Rx : MCU로 입력되는 Data Line
+- stuff bit : CAN Bus에 문제가 있는지 확인하는 bit
+- ACK Delimeter, CRC Delimeter, EOF Bit은 CAN Frame에서 1로 고정
+### Retmote Frame
+![[Pasted image 20241217175058.png]]
+- DLC와 CRC 사이에 Data Fi
 
 ### FullCAN vs BasicCAN
 **FullCAN** : 수신되는 메시지를 종류별로 메시지 버퍼에 채운다. 만약 같은 종류의 메시지가 연속해서 수신 되면, 비록 다른 메시지 버퍼가 비어 있다고 하더라도 해당 메시지의 전용 버퍼에만 메시지를 채운다.
