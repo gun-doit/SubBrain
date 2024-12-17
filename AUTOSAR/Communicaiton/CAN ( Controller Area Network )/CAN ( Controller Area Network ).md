@@ -342,10 +342,7 @@ Control Field에 추가된 비트는 EDL, BRS, ESI이며 DLC값에 따라 Data F
 
 ---
 
-**[LINK - 페스카로 기술블로그](https://www.fescaro.com/ko/archives/249/)**
-
-![[CAN_%ED%86%B5%EC%8B%A0_%EA%B0%9C%EC%9A%94_%EB%B0%8F_DB_%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0_%EC%A0%95%EB%A6%AC.pdf]]
-
+**[LINK - 페스카로 기술블로그](https://www.fescaro.com/ko/archives/249/)**!
 **[CAN FD 란?](https://m.blog.naver.com/suresofttech/221408852229)**
 
 **[CAN Bus Off - 페스카로](https://www.fescaro.com/kr/insight/blog.php?code=blog&idx=15&bgu=view)**
