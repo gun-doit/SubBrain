@@ -4,9 +4,9 @@
 
 ## AUTOSAR CAN 통신 개요
 
-**송신 : Application Layer → Communication Services → Hardware Abstraction → Drivers  
-수신 : Driver → Hardware Abstraction → Communication Services → Application Layer  
-**
+**송신** : Application Layer → Communication Services → Hardware Abstraction → Drivers  
+**수신** : Driver → Hardware Abstraction → Communication Services → Application Layer  
+
 
 ![[image 27.png|image 27.png]]
 
