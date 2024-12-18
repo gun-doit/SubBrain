@@ -21,9 +21,7 @@ CAN Frame
 - **IDE (IDentifier Extension)** : 이 Data Frame이 표준형 / 확장형 Data Frame인가를 구별하는 기준
     - 0 : Standard Frame 
     - 1 : Extended Frame
-    - 확장형의 경우 IDE 뒤에 확장되는 ID가 따라옴(18bit)  
-          
-        
+    - 확장형의 경우 IDE 뒤에 확장되는 ID가 따라옴(18bit)          
     - **SRR (Substitute Remote Request)** : 현재 Data Frame이 확장형인 경우, RTR은 확장된 ID 뒤로 이동하고  
         원래 RTR의 자리를 대체하는 1bit
     - ID 값이 끝난 후에 RTR bit를 표시할 수 있도록 RTR을 임시적으로 대체해주는 역할
@@ -44,12 +42,13 @@ CAN Frame
 - CAN Rx : MCU로 입력되는 Data Line
 - stuff bit : CAN Bus에 문제가 있는지 확인하는 bit
 - ACK Delimeter, CRC Delimeter, EOF Bit은 CAN Frame에서 1로 고정
-### Retmote Frame
-![[Pasted image 20241217175058.png]]
+# Retmote Frame
+특정한 Data Frame의 전송을 다른 Node에 요청하는 프레임
+   -> ID 값이 들어가는 Filed가 있어 표준형과 확장형으로 나뉨![[Pasted image 20241217175058.png]]
 - DLC와 CRC 사이에 Data Field가 없다는 것과 RTR bit의 값을 제외하고 Data Frame과 동일
 	- Data를 요청하는 Frame이기 때문에 Data Field 필요 X
 ![[Pasted image 20241217175142.png]]
-##### Remote Frame의 사용
+## Remote Frame의 사용
 Node A에서 Remote Frame 전송
 - A에서 보내는 Message는 Remote Frame이므로 Data Field가 없음
 - ID Field 내에 있는 값을 갖는 Message를 Node B에 요청
@@ -59,12 +58,13 @@ Node B는 위에서 요청된 ID를 갖는 Message를 생성할 수 있는 Node
 위처럼 Data Frame과 Remote Frame은 한 쌍으로 주고 받아지며, 두 Frame의 ID 값은 같아야 한다
 ![[Pasted image 20241217175306.png]]
 
-### Error Frame
+# Error Frame
+어떤 node에서 Error가 발견됐을 경우 주변 node들에게 Error가 났다는 사실을 알리기 위한 Frame
 ![[Pasted image 20241217175328.png]]
 - Error 발생 시 상태를 알려주기 위한 부분
     - 위의 Error Flag - Error Delimiter 까지가 Error Frame
     - Error Flag (무조건 6 bit)
-    - Error Flag (Secondary) : 올 수도 있고 안올 수도 있음 (0~6 bit)
+    - Error Flag (Secondary) : 올 수도 있고 안올 수도 있다 (0~6 bit)
     - Error Delimiter : Error 구분자. 8개의 Logic '1'의 값을 가짐
 - Error Flag는 Error의 상태에 따라 능동 / 수동 Error Frame으로 나뉨
     - CAN Node는 자체적으로 Error Counter를 가짐 (Error 발생 시 +1, 정상 동작 시 -1 방식?)
