@@ -1,12 +1,7 @@
 총 4가지 프레임 유형이 정의 되어 있다. 각 프레임은 특정 목적과 기능을 수행하며, 네트워크 내에서 필요한 정보를 교환하거나 통신 상태를 관리한다.
 
-CAN Frame
-![[Pasted image 20241217174213.png]]
-1. Data Frame : Data를 한 node에서 다른 node로 전송하기 위한 Frame
-2. Remote Frame : 특정한 Data Frame의 전송을 다른 Node에 요청
-   -> ID 값이 들어가는 Filed가 있어 표준형과 확장형으로 나뉨
-3. Error Frame : 어떤 node에서 Error가 발견됐을 경우 주변 node들에게 Error가 났다는 사실을 알리기 위한 Frame
-4. Overlaod Frame : 어떤 node가 remote frame을 받았는데,그 node가 이미 하던 일이 있어 바로 보낼 수 없게 되는 경우, 자신이 과부하 상태임을 알리는 Frame
+## CAN FD란
+CAN FD는 CAN 통신에 "Flexible Data" 기능이 추가된 버전이다. ECU는 "flexible"하게 메시지의 크기와 전송 속도를 실시간으로 바꿀 수 있어 결과적으로 더 많은 양의 데이터를 빠르게 전송할 수 있다는 장점이 있다.
 
 ![[Pasted image 20241217174537.png]]
 # Data Frame
@@ -72,7 +67,7 @@ Node B는 위에서 요청된 ID를 갖는 Message를 생성할 수 있는 Node
     - Error가 별로 없으면 능동, 많으면 수동 Error Frame 사용
     - 능동 Error Flag는 6~12개의 '0', 수동은 6개의 '1'이 들어감
 - 즉 Node의 Error 상태에 따라 Error Flag의 값이 달라짐
-### Overload Frame
+# Overload Frame
 
 ![](https://blog.kakaocdn.net/dn/qLEdx/btsHz8O2IsL/xdP42QeZKgfqhCBurUMSZ1/img.png)
 
