@@ -5,7 +5,7 @@ CAN FD는 CAN 통신에 "Flexible Data" 기능이 추가된 버전이다. ECU는
 
 ![[Pasted image 20241217174537.png]]
 # Data Frame
-![[Pasted image 20241217174843.png]]
+![[Pasted image 20241218105833.png]]
 **Data를 한 node에서 다른 node로 전송하기 위한 Frame**
 - **IFS (Inter Frame Space) :** Frame 간 3bit 정도의 간격 유지용. Idle Time 유지 역할
 - **SOF (Start Of Frame) :** 모든 Frame이 기본적으로 보유하는1bit Data. Frame의 시작을 알림
@@ -32,6 +32,9 @@ CAN FD는 CAN 통신에 "Flexible Data" 기능이 추가된 버전이다. ECU는
         0이 Dominant Bit이므로 0이 쓰임
     - 즉 **수신단에서 Message를 정상적으로 받았다면 ACK 값이 0으로 변함**
 - **EOF (End Of Frame) :**
+## CAN FD Data Frame
+![[Pasted image 20241218105851.png]]
+일반 CAN과 Data Field크기의 차이가 있다. 기존 CAN Frame에서 8byte크기의 Data Field가 64byte로 증가했다.
 ## Detail of Data Frame
 ![[Pasted image 20241217174858.png]]
 - CAN Rx : MCU로 입력되는 Data Line
