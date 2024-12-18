@@ -24,3 +24,4 @@ CAN H와 CAN L의 전위차가 있을 때는 dominant (우성)
 
 --- 
 [CAN 통신의 개요 (Controller Area Network) : 네이버 블로그](https://m.blog.naver.com/lagrange0115/221941482740)
+[기술블로그 - INSIGHT - 페스카로(FESCARO) - 자동차 소프트웨어 전문기업(자동차 사이버보안, 제어기, V2X)](https://www.fescaro.com/ko/archives/249/)
