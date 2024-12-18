@@ -1,3 +1,5 @@
+총 4가지 프레임 유형이 정의 되어 있다. 각 프레임은 특정 목적과 기능을 수행하며, 네트워크 내에서 필요한 정보를 교환하거나 통신 상태를 관리한다.
+
 CAN Frame
 ![[Pasted image 20241217174213.png]]
 1. Data Frame : Data를 한 node에서 다른 node로 전송하기 위한 Frame
@@ -7,7 +9,7 @@ CAN Frame
 4. Overlaod Frame : 어떤 node가 remote frame을 받았는데,그 node가 이미 하던 일이 있어 바로 보낼 수 없게 되는 경우, 자신이 과부하 상태임을 알리는 Frame
 
 ![[Pasted image 20241217174537.png]]
-### Data Frame
+## Data Frame
 ![[Pasted image 20241217174843.png]]
 
 - **IFS (Inter Frame Space) :** Frame 간 3bit 정도의 간격 유지용. Idle Time 유지 역할
