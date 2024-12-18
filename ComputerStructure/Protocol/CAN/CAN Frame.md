@@ -9,9 +9,9 @@ CAN Frame
 4. Overlaod Frame : 어떤 node가 remote frame을 받았는데,그 node가 이미 하던 일이 있어 바로 보낼 수 없게 되는 경우, 자신이 과부하 상태임을 알리는 Frame
 
 ![[Pasted image 20241217174537.png]]
-## Data Frame
+# Data Frame
 ![[Pasted image 20241217174843.png]]
-
+**Data를 한 node에서 다른 node로 전송하기 위한 Frame**
 - **IFS (Inter Frame Space) :** Frame 간 3bit 정도의 간격 유지용. Idle Time 유지 역할
 - **SOF (Start Of Frame) :** 모든 Frame이 기본적으로 보유하는1bit Data. Frame의 시작을 알림
 - **ID (Identifier) :** Bus에 접근할 Node 설정 (통신할 장치 선택). 표준형은 11bit, 확장형은 29 bit
@@ -39,7 +39,7 @@ CAN Frame
         0이 Dominant Bit이므로 0이 쓰임
     - 즉 **수신단에서 Message를 정상적으로 받았다면 ACK 값이 0으로 변함**
 - **EOF (End Of Frame) :**
-##### Detail of Data Frame
+## Detail of Data Frame
 ![[Pasted image 20241217174858.png]]
 - CAN Rx : MCU로 입력되는 Data Line
 - stuff bit : CAN Bus에 문제가 있는지 확인하는 bit
