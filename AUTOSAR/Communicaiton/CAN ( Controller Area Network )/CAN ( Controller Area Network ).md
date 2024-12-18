@@ -38,10 +38,10 @@ Bus-Off Recovery 기능과 Network Status 제어 기능을 포함한다
 
 Network 구성과 Sleep 제어 기능을 포함한다.
 
-|**모듈**|**기능 설명**|
-|---|---|
-|**  <br>Nm  <br>Interface  <br>**|**ComM으로 부터 Network Request 또는 Release 명령을 받아 실행  <br>Network 요청 상태에 따라 하위 BusNm 모듈 제어  <br>전체 Network Cluster가 동기화 되어 SLEEP에 진입하도록 제어  <br>Network 상태를 ComM에게 통지  <br>**|
-|**CanNM  <br>(OsekNm)  <br>**|**NM PDU를 송수신 하여 Network의 상태를 감시  <br>Network상에 있는 모든 제어기들이 동시에 BUS SLEEP상태에 진입하도록 제어  <br>NM Interface모듈에게 Network 상태를  <br>**|
+| **모듈**                            | **기능 설명**                                                                                                                                                                 |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **  <br>Nm  <br>Interface  <br>** | **ComM으로 부터 Network Request 또는 Release 명령을 받아 실행  <br>Network 요청 상태에 따라 하위 BusNm 모듈 제어  <br>전체 Network Cluster가 동기화 되어 SLEEP에 진입하도록 제어  <br>Network 상태를 ComM에게 통지  <br>** |
+| **CanNM  <br>(OsekNm)  <br>**     | **NM PDU를 송수신 하여 Network의 상태를 감시  <br>Network상에 있는 모든 제어기들이 동시에 BUS SLEEP상태에 진입하도록 제어  <br>NM Interface모듈에게 Network 상태를  <br>**                                           |
 
   
 
