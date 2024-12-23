@@ -336,7 +336,7 @@ Control Field에 추가된 비트는 EDL, BRS, ESI이며 DLC값에 따라 Data F
 
 [[CSMA-CD + AMP]]
 
-[[통신]]
+[[STUDY/통신]]
 
   
 

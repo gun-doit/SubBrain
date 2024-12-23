@@ -44,7 +44,7 @@
 
 [[K-line]]
 
-[[통신]]
+[[STUDY/통신]]
 
 [[CAN ( Controller Area Network )]]
 
