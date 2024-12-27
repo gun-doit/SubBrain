@@ -16,7 +16,8 @@ Manager/User : Mode arbitration rule을 만족하면, Manager는 User에게 Mode
 Mode Manager, User는 요청 주체에 따라 어떤 SWC라도 사용할 수 있다.
 
   
-![[image 1 12.png|image 1 12.png]]12.png![[image 2 11.png|image 2 11.png]]e 2 11.png|image 2 11.png]]
+
+![[image 1 12.png|image 1 12.png]]12.png![[image 2 11.png|image 2 11.png]]e 2 11.png|image 2 11.png]]
 
   
 
