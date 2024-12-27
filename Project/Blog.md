@@ -1,3 +1,14 @@
+# 사용한 색 조합
+  
+![[Pasted image 20241227170949.png]]
+#F8FAFC
+
+#D9EAFD
+
+#BCCCDC
+
+#9AA6B2
+
 #### /blog
 : 블로그 메인페이지
 - [ ] github 잔디 연동
