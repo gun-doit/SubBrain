@@ -30,5 +30,6 @@
 
 ## DB Import 연습 RCM_R440
 **target 1129**
-1. Rebuild
-2. 
+#### 1. Rebuild
+$DB Import
+#### 2.
