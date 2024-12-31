@@ -55,5 +55,7 @@ $에러가 없는 상태임을 확인한다. Build없이 진행하면 DCM, DEM �
 #### 7. BswM Harmonize
 - Ecud_BswM.arxml / Swcd_Bsw_bswM.arxml 내용 삭제
 - Harmonize
-- 
-
+- ![[Pasted image 20241231105644.png]]
+- ![[Pasted image 20241231105650.png]]
+- 위와 마찬가지로 각각 두번 진행
+#### 8. Rte Harmonize
