@@ -1,9 +1,9 @@
 
 출처 
 [AUTOSAR CAN : DB Import, Configuration & Generation : 네이버 블로그](https://m.blog.naver.com/techref/222435476591)
+[AUTOSAR CAN 통신 스택 : AUTOS.. : 네이버블로그](https://blog.naver.com/mdstec_auto/222070210412)
 # DB Import란?
-플랫폼에서 DB내에 저장된 각각의 메시지들을 프로젝트의 각 객체로 파싱해주는 작업을 말한다. CAN DB파일인 DBC 파일을 AUTOSAR에서 사용 가능한 .arxml 형식으로 변환한다.
-
+플랫폼에서 DB내에 저장된 각각의 메시지들을 프로젝트의 **각 객체로 파싱**해주는 작업을 말한다.  ARXML파일 뿐 아니라 CAN/LIN/Flexray/Ethernet등의 데이터베이스 혹은 엑셀 형식으로 저장된 파일을 drag-drop 방식으로 끌어와서 간편하게 ARXML 형태도 만들어주는 기능을 제공할 뿐 아니라, import한 데이터를 모듈들의 의존성을 고려해서 자동으로 설정해주는 기능도 제공한다.
 
 # ECU Configuration & Generation
 **ARXML** 형태로 변환된 CAN DB 정보가 BSW 모듈에 자동으로 반영되는 모듈은 아래와 같다.
@@ -31,5 +31,4 @@
 ## DB Import 연습 RCM_R440
 **target 1129**
 1. Rebuild
-	1. 
 2. 
