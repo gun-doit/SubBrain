@@ -31,5 +31,6 @@
 ## DB Import 연습 RCM_R440
 **target 1129**
 #### 1. Rebuild
-$DB Import
-#### 2.
+$에러가 없는 상태임을 확인한다. Build없이 진행하면 DCM, DEM 등 연결이 끊어지는 경우가 발생할 수 있다
+#### 2. 기존 DB를 삭제
+#### 3. 새로운 DB를 Imp
