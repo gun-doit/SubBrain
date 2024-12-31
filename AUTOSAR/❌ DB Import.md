@@ -43,3 +43,10 @@ $에러가 없는 상태임을 확인한다. Build없이 진행하면 DCM, DEM �
 #### 5. Mcal/Can/Hardware Object/Hw Object Count 1로 설정
 #### 6. BswM을 제외한 모듈 모듈 Generation
 - Ecud_BswM.arxml / Swcd_Bsw_bswM.arxml 내용 삭제
+- Dummy BswM Harmonize
+  BswM만 선택하여 Harmonize 한다
+  ![[Pasted image 20241231104709.png]]
+  ![[Pasted image 20241231104718.png]]
+  각각 두번 진행
+- BswM 제외하고 Generate
+  Scons/RTSW/Generation/BswM/Used -> false로 하고 진행한다.
