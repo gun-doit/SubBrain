@@ -59,3 +59,6 @@ $에러가 없는 상태임을 확인한다. Build없이 진행하면 DCM, DEM �
 - ![[Pasted image 20241231105650.png]]
 - 위와 마찬가지로 각각 두번 진행
 #### 8. Rte Harmonize
+## 오류
+BswInstance configuration이 활성화 되지 않음
+![[Pasted image 20241231105839.png]]
