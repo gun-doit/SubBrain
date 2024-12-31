@@ -8,7 +8,9 @@
 #BCCCDC
 
 #9AA6B2
-
+# TODO
+- [ ] 다크모드 구현
+- [ ] About페이지 구현
 #### /blog
 : 블로그 메인페이지
 - [ ] github 잔디 연동
@@ -70,6 +72,7 @@ const HealthSchema = new mongoose.Schema({
     timestamps: true
 });
 ```
+
 [{
 userId;
 pushup_total: number
