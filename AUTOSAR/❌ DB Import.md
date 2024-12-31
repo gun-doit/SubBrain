@@ -40,6 +40,7 @@ $에러가 없는 상태임을 확인한다. Build없이 진행하면 DCM, DEM �
 - CAN Cluster
 - ![[Pasted image 20241231104247.png]]
 #### 4. BswM을 제외한 모든 모듈 Harmonize
+![[Pasted image 20241231132349.png]]
 #### 5. Mcal/Can/Hardware Object/Hw Object Count 1로 설정
 #### 6. BswM을 제외한 모듈 모듈 Generation
 - Ecud_BswM.arxml / Swcd_Bsw_bswM.arxml 내용 삭제
