@@ -16,7 +16,10 @@
 - EcuC : PDU Reference 설정
 - ComM : CAN 채널 설정
 - Nm : Nm 채널 설정
-- BswM : CAN 채널 제
+- BswM : CAN 채널 제어에 대한 설정
+![[Pasted image 20241231102904.png]]
+
+
 1. 플랫폼에서 DB import란  DB내에 저장된 각각의 메시지들을 프로젝트의 각 객체로 파싱 해주는 작업
 2. 관련파일
 	1. Configuration > System > Composition > EcuExtgracct.axrml
@@ -27,4 +30,6 @@
 
 ## DB Import 연습 RCM_R440
 **target 1129**
-1. Reb
+1. Rebuild
+	1. 
+2. 
