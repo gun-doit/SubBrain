@@ -4,7 +4,7 @@
 
 **[회로도](https://www.edrawsoft.com/kr/article/electrical-symbols.html)**
 
-[[AUTOSAR]]
+[[❌ AUTOSAR]]
 
 [[RTE]]
 
