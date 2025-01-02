@@ -8,6 +8,7 @@
 #BCCCDC
 
 #9AA6B2
+[flex 공식 블로그](https://flex.team/blog/category/article/)
 # TODO
 - [ ] 다크모드 구현
 - [ ] About페이지 구현
