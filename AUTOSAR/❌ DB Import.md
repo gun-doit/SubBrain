@@ -52,7 +52,7 @@ $에러가 없는 상태임을 확인한다. Build없이 진행하면 DCM, DEM �
   ![[Pasted image 20250103100135.png]]
   ![[Pasted image 20241231104849.png]]
   각각 두번 진행
-- BswM 제외하고 Generate
+- BswM 제외하고 Generate                     
   Scons/RTSW/Generation/BswM/Used -> false로 하고 진행한다.
 #### 7. BswM Harmonize
 - Ecud_BswM.arxml / Swcd_Bsw_bswM.arxml 내용 삭제
