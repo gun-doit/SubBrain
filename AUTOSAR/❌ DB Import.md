@@ -49,6 +49,7 @@ $에러가 없는 상태임을 확인한다. Build없이 진행하면 DCM, DEM �
   ![[Pasted image 20241231104709.png]]
   ![[Pasted image 20241231104718.png]]
   ## 오류발생
+  ![[Pasted image 20250103100135.png]]
   ![[Pasted image 20241231104849.png]]
   각각 두번 진행
 - BswM 제외하고 Generate
