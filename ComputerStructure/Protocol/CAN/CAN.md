@@ -1,4 +1,5 @@
 >Controller Area Network
+
 ### CAN 통신 이란
 - **Fault Tolerant system**  기능을 지원하는 Low Speed CAN과 High Speed CAN으로 두 가닥의 일반 전선으로 구성된다.
 - 차량 내 각 ECU 장치들이 Host Computer 없이 서로 통신하기 위해 설계된 Message 기반 표준 Protocol
@@ -11,6 +12,7 @@
 ##### 각 Node는 고유의 ID를 보유 : ID 값을 통해 통신 순위를 선택
 
 ### CAN의 특징
+##### 브로드캐스트 방식
 ##### 메시지 지향성 프로토콜 
 - 메시지의 우선순위에 따라 ID를 할당하고, 이 ID를 이용해 메시지를 구별하는 방식
 ##### Multi Master 통신
