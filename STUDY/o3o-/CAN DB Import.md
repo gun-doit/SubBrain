@@ -1,4 +1,4 @@
-# AUTOSAR CAN DB 가져오기
+ AUTOSAR CAN DB 가져오기
 
 AUTOSAR (AUTomotive Open System ARchitecture) CAN DB를 가져오는 과정은 자동차 소프트웨어 개발에서 중요한 단계입니다. 이 과정을 통해 차량의 CAN (Controller Area Network) 통신 구성을 효율적으로 관리할 수 있습니다.
 
