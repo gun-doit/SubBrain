@@ -40,7 +40,10 @@ CAN 통신은 버스 토폴로지로 정보가 버스엔에 올라간다는것
 - Logic 1 전송 시 CAN_H, CAN_L가 모두 2.5V를 가짐
 - Logic 0 전송 시 CAN_H는 3.5V, CAN_L는 1.5V를 가짐
 	- Recessive(열성) Voltage : 1 bit
-	- Dominatn(우성) Voltage : 0 bit
+	- Dominant(우성) Voltage : 0 bit
+
+Dominant가 Recessive보다 우선순위가 높다.
+
 ![[Pasted image 20241217165811.png]]
 - Bus 구성의 Topology
 - Termination은 양단 끝에서 처리
