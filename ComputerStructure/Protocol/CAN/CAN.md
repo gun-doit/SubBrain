@@ -2,6 +2,13 @@
 
 [CAN통신의 Fault & Bus Off에 대하여 (작성중)](https://newbie-developer.tistory.com/240
 
+D-Sub Connecter
+![[Pasted image 20250115104859.png]]
+Can low -2
+Can high - 7
+
+120옴 제한
+통신을 통 
 ### CAN 통신 이란
 - **Fault Tolerant system**  기능을 지원하는 Low Speed CAN과 High Speed CAN으로 두 가닥의 일반 전선으로 구성된다.
 - 차량 내 각 ECU 장치들이 Host Computer 없이 서로 통신하기 위해 설계된 Message 기반 표준 Protocol
