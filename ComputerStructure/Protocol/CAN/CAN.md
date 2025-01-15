@@ -8,7 +8,10 @@ Can low -2
 Can high - 7
 
 120옴 제한
-통신을 통 
+통신을 통해 데이터를 보낸다는 것은 전기적인 신호를 통해 정보를 전달한다
+CAN 통신은 버스 토폴로지로 정보가 버스엔에 올라간다는것
+양끝단에서 신호를 반사시켜 정보 변환을 방지
+
 ### CAN 통신 이란
 - **Fault Tolerant system**  기능을 지원하는 Low Speed CAN과 High Speed CAN으로 두 가닥의 일반 전선으로 구성된다.
 - 차량 내 각 ECU 장치들이 Host Computer 없이 서로 통신하기 위해 설계된 Message 기반 표준 Protocol
