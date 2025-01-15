@@ -16,21 +16,6 @@ CAN 통신은 버스 토폴로지로 정보가 버스엔에 올라간다는것
 - **Fault Tolerant system**  기능을 지원하는 Low Speed CAN과 High Speed CAN으로 두 가닥의 일반 전선으로 구성된다.
 - 차량 내 각 ECU 장치들이 Host Computer 없이 서로 통신하기 위해 설계된 Message 기반 표준 Protocol
 
-### CAN의 구성
-![[Pasted image 20241217164411.png]]
-##### #RS485 의 Twisted Pair Cable을 통해 Serial 통신으로 통신
-- EMI(Electromagnetic Interface)에 덜 영향을 받고자 위와 같은 구조 채택
-- CAN Bus의 양 끝에 Termination Resistor가 위치
-##### 각 Node는 고유의 ID를 보유 : ID 값을 통해 통신 순위를 선택
-
-### CAN의 특징
-##### 브로드캐스트 방식
-##### 메시지 지향성 프로토콜 
-- 메시지의 우선순위에 따라 ID를 할당하고, 이 ID를 이용해 메시지를 구별하는 방식
-##### Multi Master 통신
-- 여러 ECU들이 통신 Bus를 공유하며 필요할 때마다 Bus를 사용 가능
-##### Node의 ID Filtering을 통한 Message 우선 순위 지정으로 Node 간 통신 중재
-- #CAN_Filtering 을 통해 ID 값을 수신하여 우선순위를 결정하여 버스 사용시 충돌 방지   
 ### High Speed CAN vs Low Speed CAN
 ![[Pasted image 20241217165345.png]]
 
