@@ -112,31 +112,31 @@ CheckSum Field - Classic checksum : LIN1.3에서 사용, 데이터 부분만 All
 - **약어 및 축약어**
     
     이 문서에서는 **ISO 17987 LIN** 규격에서 사용된 약어 및 축약어 외에도 아래와 같은 약어와 축약어를 사용합니다. 일부 용어는 문서에서 자주 사용되므로 이해를 돕기 위해 다시 정의되었습니다.
-    
-    |   |   |
-    |---|---|
-    |약어/축약어|설명|
-    |**CF**|LIN TP에서의 연속 프레임 (Consecutive Frame)|
-    |**FF**|LIN TP에서의 첫 번째 프레임 (First Frame)|
-    |**ID**|식별자 (Identifier)|
-    |**LDF**|LIN 설명 파일 (LIN Description File)|
-    |**LIN TP (LinTp)**|LIN 전송 프로토콜 (LIN 인터페이스의 일부)|
-    |**MRF**|마스터 요청 프레임 (Master Request Frame)|
-    |**NAD**|노드 주소 (Node Address). LIN의 각 슬레이브는 고유 NAD를 가져야 함|
-    |**NC**|노드 구성 (Node Configuration)|
-    |**N_As**|송신 측에서 LIN 프레임(N-PDU) 전송 시간 (ISO 17987-2 참조)|
-    |**N_Cr**|다음 연속 프레임 N-PDU 수신까지의 시간 (ISO 17987-2 참조)|
-    |**N_Cs**|다음 연속 프레임 N-PDU 전송까지의 시간 (ISO 17987-2 참조)|
-    |**P2**|LIN 버스에서 진단 요청의 마지막 프레임을 수신하고 슬레이브 노드가 응답 데이터를 제공할 수 있을 때까지의 시간|
-    |**P2***|응답 대기 프레임(0x78)을 송신하고 LIN 슬레이브가 응답 데이터를 제공할 수 있을 때까지의 시간|
-    |**PID**|보호된 ID (Protected ID)|
-    |**RX**|수신 (Reception)|
-    |**SID**|서비스 식별자 (노드 구성 서비스의 식별자)|
-    |**SF**|LIN TP에서의 단일 프레임 (Single Frame)|
-    |**SRF**|슬레이브 응답 프레임 (Slave Response Frame)|
-    |**SRS**|소프트웨어 요구 사항 명세서 (Software Requirement Specification)|
-    |**TX**|송신 (Transmission)|
-    
+
+|                    |                                                                 |
+| ------------------ | --------------------------------------------------------------- |
+| 약어/축약어             | 설명                                                              |
+| **CF**             | LIN TP에서의 연속 프레임 (Consecutive Frame)                            |
+| **FF**             | LIN TP에서의 첫 번째 프레임 (First Frame)                                |
+| **ID**             | 식별자 (Identifier)                                                |
+| **LDF**            | LIN 설명 파일 (LIN Description File)                                |
+| **LIN TP (LinTp)** | LIN 전송 프로토콜 (LIN 인터페이스의 일부)                                     |
+| **MRF**            | 마스터 요청 프레임 (Master Request Frame)                               |
+| **NAD**            | 노드 주소 (Node Address). LIN의 각 슬레이브는 고유 NAD를 가져야 함                |
+| **NC**             | 노드 구성 (Node Configuration)                                      |
+| **N_As**           | 송신 측에서 LIN 프레임(N-PDU) 전송 시간 (ISO 17987-2 참조)                    |
+| **N_Cr**           | 다음 연속 프레임 N-PDU 수신까지의 시간 (ISO 17987-2 참조)                       |
+| **N_Cs**           | 다음 연속 프레임 N-PDU 전송까지의 시간 (ISO 17987-2 참조)                       |
+| **P2**             | LIN 버스에서 진단 요청의 마지막 프레임을 수신하고 슬레이브 노드가 응답 데이터를 제공할 수 있을 때까지의 시간 |
+| **P2***            | 응답 대기 프레임(0x78)을 송신하고 LIN 슬레이브가 응답 데이터를 제공할 수 있을 때까지의 시간        |
+| **PID**            | 보호된 ID (Protected ID)                                           |
+| **RX**             | 수신 (Reception)                                                  |
+| **SID**            | 서비스 식별자 (노드 구성 서비스의 식별자)                                        |
+| **SF**             | LIN TP에서의 단일 프레임 (Single Frame)                                 |
+| **SRF**            | 슬레이브 응답 프레임 (Slave Response Frame)                              |
+| **SRS**            | 소프트웨어 요구 사항 명세서 (Software Requirement Specification)            |
+| **TX**             | 송신 (Transmission)                                               |
+
 
   
 
